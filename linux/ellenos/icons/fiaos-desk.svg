@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Fia Desk">
+  <rect width="64" height="64" rx="14" fill="#141820"/>
+  <rect x="2" y="2" width="60" height="60" rx="13" fill="none" stroke="#39C5BB" stroke-width="2"/>
+  <rect x="14" y="16" width="36" height="24" rx="2" fill="none" stroke="#39C5BB" stroke-width="3"/><path d="M24 46h16M32 40v6" stroke="#E12885" stroke-width="3"/>
+</svg>

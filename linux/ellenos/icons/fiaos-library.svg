@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="App Library">
+  <rect width="64" height="64" rx="14" fill="#141820"/>
+  <rect x="2" y="2" width="60" height="60" rx="13" fill="none" stroke="#39C5BB" stroke-width="2"/>
+  <rect x="16" y="16" width="14" height="14" rx="3" fill="#39C5BB"/><rect x="34" y="16" width="14" height="14" rx="3" fill="#E12885"/><rect x="16" y="34" width="14" height="14" rx="3" fill="#86CECB"/><rect x="34" y="34" width="14" height="14" rx="3" fill="#F4D35E"/>
+</svg>

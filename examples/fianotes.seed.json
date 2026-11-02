@@ -1,0 +1,150 @@
+{
+  "version": 1,
+  "example": true,
+  "folders": [
+    {
+      "id": "inbox",
+      "name": "Inbox",
+      "parent": null
+    },
+    {
+      "id": "study",
+      "name": "Study",
+      "parent": null
+    },
+    {
+      "id": "house",
+      "name": "House",
+      "parent": null
+    },
+    {
+      "id": "wiki",
+      "name": "Wiki",
+      "parent": null
+    }
+  ],
+  "notes": [
+    {
+      "id": "exspeech",
+      "kind": "note",
+      "title": "Demo letters \u2014 practice cues",
+      "folder": "study",
+      "tags": [
+        "study",
+        "demo"
+      ],
+      "person": "Bea",
+      "example": true,
+      "src": "seed",
+      "srcId": "seed:letters",
+      "created": "2026-10-20T09:00:00.000Z",
+      "updated": "2026-10-28T09:00:00.000Z",
+      "body": "# Demo practice cues\n\nSample cards for the demo workshop. The router note is [[Home router]]. Bins are [[Bin night]].\n\nQ: What is a demo pair?\nA: Two sample words used only in this demo.\n\nsip :: ship\n"
+    },
+    {
+      "id": "exbin",
+      "kind": "note",
+      "title": "Bin night",
+      "folder": "house",
+      "tags": [
+        "house",
+        "bins"
+      ],
+      "person": "Everyone",
+      "example": true,
+      "src": "seed",
+      "srcId": "seed:bin",
+      "created": "2026-10-18T08:00:00.000Z",
+      "updated": "2026-10-18T08:00:00.000Z",
+      "body": "Yellow lid Tuesday. Red lid Friday.\n\nFictional Demo Harbour schedule for the demo household. Not a real council calendar.\n"
+    },
+    {
+      "id": "exrouter",
+      "kind": "doc",
+      "title": "Home router",
+      "folder": "wiki",
+      "tags": [
+        "house",
+        "wifi"
+      ],
+      "person": "Everyone",
+      "example": true,
+      "src": "seed",
+      "srcId": "seed:router",
+      "created": "2026-10-18T08:30:00.000Z",
+      "updated": "2026-10-22T08:30:00.000Z",
+      "body": "## Where it lives\n\nThe demo router is in a hallway cupboard that does not exist.\n\n- Network name: `DemoHarbour-Example`\n- Guest network stays off\n- Restart: unplug for **30 seconds**\n\n| Light | Meaning |\n| --- | --- |\n| Green | Online |\n| Amber | Starting |\n\nBins go out on [[Bin night]].\n"
+    },
+    {
+      "id": "exsheet",
+      "kind": "sheet",
+      "title": "Grocery split",
+      "folder": "house",
+      "tags": [
+        "money",
+        "groceries"
+      ],
+      "person": "Everyone",
+      "example": true,
+      "src": "seed",
+      "srcId": "seed:sheet",
+      "created": "2026-10-21T10:00:00.000Z",
+      "updated": "2026-10-21T10:00:00.000Z",
+      "body": "",
+      "cells": {
+        "A1": "Item",
+        "B1": "Ada",
+        "C1": "Bea",
+        "D1": "Cam",
+        "E1": "Total",
+        "A2": "Milk",
+        "B2": "2",
+        "C2": "2",
+        "D2": "2",
+        "E2": "=SUM(B2:D2)",
+        "A3": "Bread",
+        "B3": "3.5",
+        "C3": "0",
+        "D3": "3.5",
+        "E3": "=SUM(B3:D3)",
+        "A4": "Average",
+        "E4": "=AVERAGE(E2:E3)"
+      }
+    }
+  ],
+  "cards": [
+    {
+      "id": "excard1",
+      "noteId": "exspeech",
+      "front": "What is a demo pair?",
+      "back": "Two sample words used only in this demo.",
+      "tags": [
+        "demo"
+      ],
+      "ease": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "lapses": 0,
+      "due": "2020-01-01",
+      "example": true,
+      "created": "2026-10-28T09:00:00.000Z"
+    },
+    {
+      "id": "excard2",
+      "noteId": "exspeech",
+      "front": "sip",
+      "back": "ship",
+      "tags": [
+        "demo"
+      ],
+      "ease": 2.5,
+      "interval": 6,
+      "reps": 2,
+      "lapses": 0,
+      "due": "2099-01-01",
+      "example": true,
+      "created": "2026-10-28T09:00:00.000Z"
+    }
+  ],
+  "meta": {}
+}

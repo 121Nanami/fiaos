@@ -1,0 +1,16 @@
+#!/bin/sh
+# fiaOS backlight helper: day | dim | wake  (off = manual only; the kiosk never blanks itself)
+# Levels can be overridden in /etc/fiaos/brightness.conf (DAY=60 DIM=15 NIGHT_FROM=21 NIGHT_TO=6)
+DAY=60 DIM=15 NIGHT_FROM=21 NIGHT_TO=6
+# shellcheck disable=SC1091
+[ -r /etc/fiaos/brightness.conf ] && . /etc/fiaos/brightness.conf
+h=$(date +%-H)
+is_night() { if [ "$NIGHT_FROM" -gt "$NIGHT_TO" ]; then [ "$h" -ge "$NIGHT_FROM" ] || [ "$h" -lt "$NIGHT_TO" ]; else [ "$h" -ge "$NIGHT_FROM" ] && [ "$h" -lt "$NIGHT_TO" ]; fi; }
+set_pct() { brightnessctl -q set "$1%" 2>/dev/null || true; }
+case "${1:-}" in
+  day)  set_pct "$DAY" ;;
+  dim)  set_pct "$DIM" ;;
+  off)  set_pct 0 ;;
+  wake) if is_night; then set_pct "$DIM"; else set_pct "$DAY"; fi ;;
+  *) echo "usage: $0 day|dim|off|wake" >&2; exit 2 ;;
+esac

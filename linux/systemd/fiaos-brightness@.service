@@ -1,0 +1,9 @@
+[Unit]
+Description=fiaOS screen brightness: %i
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/fiaos-brightness %i
+
+[Install]
+WantedBy=multi-user.target

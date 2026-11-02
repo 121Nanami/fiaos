@@ -1,0 +1,14 @@
+[Unit]
+Description=fiaOS first-boot installer (retries install-fiaos.sh if the installer step did not finish)
+After=network-online.target
+Wants=network-online.target
+ConditionPathExists=!/var/lib/fiaos/installed
+
+[Service]
+Type=oneshot
+Environment=FIAOS_NONINTERACTIVE=1
+ExecStart=/bin/bash -c 'bash /root/fiaos/linux/install-fiaos.sh >> /var/log/fiaos-install.log 2>&1 && systemctl reboot'
+TimeoutStartSec=3600
+
+[Install]
+WantedBy=multi-user.target

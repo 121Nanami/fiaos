@@ -1,0 +1,31 @@
+[Unit]
+Description=fiaOS local server (app + integration proxy)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=fiaos
+Group=fiaos
+SupplementaryGroups=video
+WorkingDirectory=/opt/fiaos
+Environment=NODE_ENV=production PORT=8080 HOST=127.0.0.1 FIAOS_DATA=/var/lib/fiaos NOTEBOOKLM_HOME=/var/lib/fiaos/notebooklm
+# account tokens (accounts.json, 0600) live here; only the fiaos user can read them
+StateDirectory=fiaos
+StateDirectoryMode=0700
+UMask=0077
+EnvironmentFile=-/etc/fiaos/fiaos.env
+ExecStart=/usr/bin/node /opt/fiaos/server.js
+Restart=always
+RestartSec=2
+Nice=5
+CPUQuota=60%
+MemoryMax=512M
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+
+[Install]
+WantedBy=multi-user.target

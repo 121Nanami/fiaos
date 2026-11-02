@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Workouts">
+  <rect width="64" height="64" rx="14" fill="#141820"/>
+  <rect x="2" y="2" width="60" height="60" rx="13" fill="none" stroke="#39C5BB" stroke-width="2"/>
+  <rect x="18" y="28" width="8" height="12" rx="2" fill="#39C5BB"/><rect x="38" y="24" width="8" height="16" rx="2" fill="#E12885"/>
+</svg>

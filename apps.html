@@ -1,0 +1,175 @@
+<!doctype html><html lang="en-AU"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FiaOS App Library</title>
+<style>
+:root{--t:#39C5BB;--p:#E12885;--bg:#070a14}
+*{box-sizing:border-box}body{margin:0;font:18px system-ui,sans-serif;color:#e8fbfa;background:radial-gradient(ellipse at 50% 120%,#39c5bb33,transparent 60%),var(--bg)}
+header{padding:20px 24px 0}h1{margin:0;color:var(--t);font-size:28px}h1 span{color:var(--p)}p.lead{color:#9fb3bd;max-width:42rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px;padding:8px 24px 32px}
+a.tile{display:flex;flex-direction:column;gap:6px;padding:12px;border-radius:16px;background:#101826;color:inherit;text-decoration:none;border:1px solid #39c5bb44;min-height:148px}
+a.tile:focus{outline:2px solid var(--p);outline-offset:2px}a.tile small{color:#9fb3bd}
+.mark{width:56px;height:56px}.ico{width:56px;height:56px}
+</style></head><body>
+<header><h1>Fia<span>OS</span> App Library</h1><p class="lead">Open an app in this window. On EllenOS, the desktop entries open each one in its own window.</p></header>
+<main class="grid"><a class="tile" href="/apps.html"><span class="mark"><svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="App Library">
+  <rect width="64" height="64" rx="14" fill="#141820"/>
+  <rect x="2" y="2" width="60" height="60" rx="13" fill="none" stroke="#39C5BB" stroke-width="2"/>
+  <rect x="16" y="16" width="14" height="14" rx="3" fill="#39C5BB"/><rect x="34" y="16" width="14" height="14" rx="3" fill="#E12885"/><rect x="16" y="34" width="14" height="14" rx="3" fill="#86CECB"/><rect x="34" y="34" width="14" height="14" rx="3" fill="#F4D35E"/>
+</svg>
+</span><b>App Library</b><small>Every FiaOS app in one grid</small></a>
+<a class="tile" href="/?app=stage"><span class="mark"><svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Stage">
+  <rect width="64" height="64" rx="14" fill="#141820"/>
+  <rect x="2" y="2" width="60" height="60" rx="13" fill="none" stroke="#39C5BB" stroke-width="2"/>
+  <circle cx="32" cy="32" r="14" fill="none" stroke="#39C5BB" stroke-width="3"/><path d="M26 24 l14 8-14 8z" fill="#E12885"/>
+</svg>
+</span><b>Stage</b><small>Today on the house</small></a>
+<a class="tile" href="/?app=meals"><span class="mark"><svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Meals">
+  <rect width="64" height="64" rx="14" fill="#141820"/>
+  <rect x="2" y="2" width="60" height="60" rx="13" fill="none" stroke="#39C5BB" stroke-width="2"/>
+  <path d="M18 30h28c0 10-6 16-14 16s-14-6-14-16z" fill="#39C5BB"/><path d="M24 22c2 4 4 4 8 0" fill="none" stroke="#E12885" stroke-width="2"/>
+</svg>
+</span><b>Meals</b><small>Food for the day</small></a>
+<a class="tile" href="/?app=woolies"><span class="mark"><svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Shop list">
+  <rect width="64" height="64" rx="14" fill="#141820"/>
+  <rect x="2" y="2" width="60" height="60" rx="13" fill="none" stroke="#39C5BB" stroke-width="2"/>
+  <path d="M22 26h20l-2 16H24z" fill="none" stroke="#39C5BB" stroke-width="3"/><circle cx="26" cy="46" r="2" fill="#E12885"/><circle cx="38" cy="46" r="2" fill="#E12885"/>
+</svg>
+</span><b>Shop list</b><small>The household shop</small></a>
+<a class="tile" href="/?app=workouts"><span class="mark"><svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Workouts">
+  <rect width="64" height="64" rx="14" fill="#141820"/>
+  <rect x="2" y="2" width="60" height="60" rx="13" fill="none" stroke="#39C5BB" stroke-width="2"/>
+  <rect x="18" y="28" width="8" height="12" rx="2" fill="#39C5BB"/><rect x="38" y="24" width="8" height="16" rx="2" fill="#E12885"/>
+</svg>
+</span><b>Workouts</b><small>Movement for the day</small></a>
+<a class="tile" href="/?app=study"><span class="mark"><svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Study">
+  <rect width="64" height="64" rx="14" fill="#141820"/>
+  <rect x="2" y="2" width="60" height="60" rx="13" fill="none" stroke="#39C5BB" stroke-width="2"/>
+  <path d="M16 22h14v22H16zM34 22h14v22H34z" fill="none" stroke="#39C5BB" stroke-width="3"/><path d="M30 22v22" stroke="#E12885" stroke-width="2"/>
+</svg>
+</span><b>Study</b><small>What is on the desk</small></a>
+<a class="tile" href="/?app=money"><span class="mark"><svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Money">
+  <rect width="64" height="64" rx="14" fill="#141820"/>
+  <rect x="2" y="2" width="60" height="60" rx="13" fill="none" stroke="#39C5BB" stroke-width="2"/>
+  <circle cx="32" cy="32" r="14" fill="none" stroke="#F4D35E" stroke-width="3"/><path d="M32 22v20M26 28h8a4 4 0 010 8h-6" fill="none" stroke="#39C5BB" stroke-width="2"/>
+</svg>
+</span><b>Money</b><small>What came in and went out</small></a>
+<a class="tile" href="/?app=habits"><span class="mark"><svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Habits">
+  <rect width="64" height="64" rx="14" fill="#141820"/>
+  <rect x="2" y="2" width="60" height="60" rx="13" fill="none" stroke="#39C5BB" stroke-width="2"/>
+  <path d="M18 34 l8 8 20-20" fill="none" stroke="#39C5BB" stroke-width="4" stroke-linecap="round"/>
+</svg>
+</span><b>Habits</b><small>Chores and the small repeats</small></a>
+<a class="tile" href="/?app=week"><span class="mark"><svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Week">
+  <rect width="64" height="64" rx="14" fill="#141820"/>
+  <rect x="2" y="2" width="60" height="60" rx="13" fill="none" stroke="#39C5BB" stroke-width="2"/>
+  <g fill="#39C5BB"><circle cx="16" cy="32" r="2"/><circle cx="21.5" cy="32" r="2"/><circle cx="27" cy="32" r="2"/><circle cx="32.5" cy="32" r="2"/><circle cx="38" cy="32" r="2"/><circle cx="43.5" cy="32" r="2"/><circle cx="49" cy="32" r="2"/></g>
+</svg>
+</span><b>Week</b><small>The weekly review</small></a>
+<a class="tile" href="/?app=planner"><span class="mark"><svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Planner">
+  <rect width="64" height="64" rx="14" fill="#141820"/>
+  <rect x="2" y="2" width="60" height="60" rx="13" fill="none" stroke="#39C5BB" stroke-width="2"/>
+  <rect x="16" y="18" width="32" height="28" rx="3" fill="none" stroke="#39C5BB" stroke-width="3"/><path d="M16 26h32" stroke="#E12885" stroke-width="2"/>
+</svg>
+</span><b>Planner</b><small>The paper planner, on screen</small></a>
+<a class="tile" href="/?app=notes"><span class="mark"><svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="FiaNotes">
+  <rect width="64" height="64" rx="14" fill="#141820"/>
+  <rect x="2" y="2" width="60" height="60" rx="13" fill="none" stroke="#39C5BB" stroke-width="2"/>
+  <path d="M20 16h18l10 10v22H20z" fill="none" stroke="#39C5BB" stroke-width="3"/><path d="M38 16v10h10" fill="none" stroke="#E12885" stroke-width="2"/>
+</svg>
+</span><b>FiaNotes</b><small>Notes, backlinks and cards</small></a>
+<a class="tile" href="/?app=mail"><span class="mark"><svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Fia Mail">
+  <rect width="64" height="64" rx="14" fill="#141820"/>
+  <rect x="2" y="2" width="60" height="60" rx="13" fill="none" stroke="#39C5BB" stroke-width="2"/>
+  <rect x="14" y="20" width="36" height="24" rx="3" fill="none" stroke="#39C5BB" stroke-width="3"/><path d="M16 22l16 12 16-12" fill="none" stroke="#E12885" stroke-width="2"/>
+</svg>
+</span><b>Fia Mail</b><small>Inbox on this machine</small></a>
+<a class="tile" href="/?app=calendar"><span class="mark"><svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Calendar">
+  <rect width="64" height="64" rx="14" fill="#141820"/>
+  <rect x="2" y="2" width="60" height="60" rx="13" fill="none" stroke="#39C5BB" stroke-width="2"/>
+  <rect x="16" y="18" width="32" height="28" rx="3" fill="none" stroke="#39C5BB" stroke-width="3"/><circle cx="26" cy="34" r="2" fill="#E12885"/><circle cx="38" cy="34" r="2" fill="#86CECB"/>
+</svg>
+</span><b>Calendar</b><small>What is on today</small></a>
+<a class="tile" href="/?app=media"><span class="mark"><svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="FiaMedia">
+  <rect width="64" height="64" rx="14" fill="#141820"/>
+  <rect x="2" y="2" width="60" height="60" rx="13" fill="none" stroke="#39C5BB" stroke-width="2"/>
+  <circle cx="32" cy="32" r="14" fill="none" stroke="#39C5BB" stroke-width="3"/><circle cx="32" cy="32" r="4" fill="#E12885"/>
+</svg>
+</span><b>FiaMedia</b><small>Music, video and focus audio</small></a>
+<a class="tile" href="/?app=search"><span class="mark"><svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Search">
+  <rect width="64" height="64" rx="14" fill="#141820"/>
+  <rect x="2" y="2" width="60" height="60" rx="13" fill="none" stroke="#39C5BB" stroke-width="2"/>
+  <circle cx="28" cy="28" r="10" fill="none" stroke="#39C5BB" stroke-width="3"/><path d="M36 36l10 10" stroke="#E12885" stroke-width="3" stroke-linecap="round"/>
+</svg>
+</span><b>Search</b><small>One search across the house</small></a>
+<a class="tile" href="/desk.html?app=desk"><span class="mark"><svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Fia Desk">
+  <rect width="64" height="64" rx="14" fill="#141820"/>
+  <rect x="2" y="2" width="60" height="60" rx="13" fill="none" stroke="#39C5BB" stroke-width="2"/>
+  <rect x="14" y="16" width="36" height="24" rx="2" fill="none" stroke="#39C5BB" stroke-width="3"/><path d="M24 46h16M32 40v6" stroke="#E12885" stroke-width="3"/>
+</svg>
+</span><b>Fia Desk</b><small>Launcher, clipboard and windows</small></a>
+<a class="tile" href="/facet.html?app=facet"><span class="mark"><svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Facet">
+  <rect width="64" height="64" rx="14" fill="#141820"/>
+  <rect x="2" y="2" width="60" height="60" rx="13" fill="none" stroke="#39C5BB" stroke-width="2"/>
+  <path d="M32 14l14 8v16l-14 8-14-8V22z" fill="none" stroke="#39C5BB" stroke-width="3"/>
+</svg>
+</span><b>Facet</b><small>Start page for the house browser</small></a>
+<a class="tile" href="/?app=docs"><span class="mark"><svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="FiaDocs">
+  <rect width="64" height="64" rx="14" fill="#141820"/>
+  <rect x="2" y="2" width="60" height="60" rx="13" fill="none" stroke="#39C5BB" stroke-width="2"/>
+  <path d="M20 16h24v32H20z" fill="none" stroke="#39C5BB" stroke-width="3"/><path d="M26 26h12M26 32h12M26 38h8" stroke="#E12885" stroke-width="2"/>
+</svg>
+</span><b>FiaDocs</b><small>Letters, lists and pictures</small></a>
+<a class="tile" href="/?app=sheets"><span class="mark"><svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="FiaSheets">
+  <rect width="64" height="64" rx="14" fill="#141820"/>
+  <rect x="2" y="2" width="60" height="60" rx="13" fill="none" stroke="#39C5BB" stroke-width="2"/>
+  <rect x="16" y="16" width="32" height="32" fill="none" stroke="#39C5BB" stroke-width="3"/><path d="M16 28h32M16 38h32M28 16v32" stroke="#E12885" stroke-width="2"/>
+</svg>
+</span><b>FiaSheets</b><small>Books, formulas and charts</small></a>
+<a class="tile" href="/?app=slides"><span class="mark"><svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="FiaSlides">
+  <rect width="64" height="64" rx="14" fill="#141820"/>
+  <rect x="2" y="2" width="60" height="60" rx="13" fill="none" stroke="#39C5BB" stroke-width="2"/>
+  <rect x="18" y="22" width="28" height="18" fill="none" stroke="#39C5BB" stroke-width="3"/><path d="M22 18h24M26 46h12" stroke="#E12885" stroke-width="2"/>
+</svg>
+</span><b>FiaSlides</b><small>Decks that can play themselves</small></a>
+<a class="tile" href="/?app=paint"><span class="mark"><svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="FiaPaint">
+  <rect width="64" height="64" rx="14" fill="#141820"/>
+  <rect x="2" y="2" width="60" height="60" rx="13" fill="none" stroke="#39C5BB" stroke-width="2"/>
+  <path d="M18 42c8-16 20-16 28-4" fill="none" stroke="#39C5BB" stroke-width="4" stroke-linecap="round"/><circle cx="44" cy="22" r="4" fill="#E12885"/>
+</svg>
+</span><b>FiaPaint</b><small>Layers, opacity and blend</small></a>
+<a class="tile" href="/?app=draw"><span class="mark"><svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="FiaDraw">
+  <rect width="64" height="64" rx="14" fill="#141820"/>
+  <rect x="2" y="2" width="60" height="60" rx="13" fill="none" stroke="#39C5BB" stroke-width="2"/>
+  <path d="M18 44 L32 16 L46 44 Z" fill="none" stroke="#39C5BB" stroke-width="3"/><circle cx="32" cy="36" r="3" fill="#E12885"/>
+</svg>
+</span><b>FiaDraw</b><small>Paths and boolean shapes</small></a>
+<a class="tile" href="/?app=clip"><span class="mark"><svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="FiaClip">
+  <rect width="64" height="64" rx="14" fill="#141820"/>
+  <rect x="2" y="2" width="60" height="60" rx="13" fill="none" stroke="#39C5BB" stroke-width="2"/>
+  <rect x="16" y="22" width="32" height="20" rx="2" fill="none" stroke="#39C5BB" stroke-width="3"/><path d="M24 22v20M32 22v20M40 22v20" stroke="#E12885" stroke-width="2"/>
+</svg>
+</span><b>FiaClip</b><small>Cut spans and join them</small></a>
+<a class="tile" href="/?app=photo"><span class="mark"><svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="FiaPhoto">
+  <rect width="64" height="64" rx="14" fill="#141820"/>
+  <rect x="2" y="2" width="60" height="60" rx="13" fill="none" stroke="#39C5BB" stroke-width="2"/>
+  <circle cx="32" cy="32" r="10" fill="none" stroke="#39C5BB" stroke-width="3"/><circle cx="32" cy="32" r="4" fill="#E12885"/><rect x="18" y="18" width="28" height="28" rx="4" fill="none" stroke="#86CECB" stroke-width="2"/>
+</svg>
+</span><b>FiaPhoto</b><small>Tone, crop and flatten</small></a>
+<a class="tile" href="/?app=layout"><span class="mark"><svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="FiaLayout">
+  <rect width="64" height="64" rx="14" fill="#141820"/>
+  <rect x="2" y="2" width="60" height="60" rx="13" fill="none" stroke="#39C5BB" stroke-width="2"/>
+  <rect x="18" y="14" width="28" height="36" fill="none" stroke="#39C5BB" stroke-width="3"/><rect x="22" y="18" width="12" height="8" fill="#E12885"/>
+</svg>
+</span><b>FiaLayout</b><small>A page or a poster</small></a>
+<a class="tile" href="/?app=assets"><span class="mark"><svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Picture library">
+  <rect width="64" height="64" rx="14" fill="#141820"/>
+  <rect x="2" y="2" width="60" height="60" rx="13" fill="none" stroke="#39C5BB" stroke-width="2"/>
+  <rect x="16" y="20" width="32" height="24" rx="2" fill="none" stroke="#39C5BB" stroke-width="3"/><circle cx="26" cy="30" r="3" fill="#E12885"/><path d="M20 40l8-8 6 6 4-4 8 8" fill="none" stroke="#86CECB" stroke-width="2"/>
+</svg>
+</span><b>Picture library</b><small>Pictures shared by every app</small></a>
+<a class="tile" href="/?app=settings"><span class="mark"><svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Settings">
+  <rect width="64" height="64" rx="14" fill="#141820"/>
+  <rect x="2" y="2" width="60" height="60" rx="13" fill="none" stroke="#39C5BB" stroke-width="2"/>
+  <circle cx="32" cy="32" r="6" fill="none" stroke="#39C5BB" stroke-width="3"/><path d="M32 14v6M32 44v6M14 32h6M44 32h6" stroke="#E12885" stroke-width="3" stroke-linecap="round"/>
+</svg>
+</span><b>Settings</b><small>Display and power</small></a></main>
+</body></html>

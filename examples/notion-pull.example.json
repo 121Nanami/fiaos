@@ -1,0 +1,102 @@
+{
+  "wiki": [
+    {
+      "nid": "wiki-wifi-example",
+      "title": "Guest Wi-Fi",
+      "category": "House",
+      "url": "https://example.test/guest-wifi",
+      "edited": "2026-10-12T00:00:00.000Z"
+    }
+  ],
+  "wikiBodies": {
+    "wiki-wifi-example": "Guest network is off unless someone is staying.\n\nThe password card lives next to [[Bin night]]."
+  },
+  "journal": [
+    {
+      "nid": "journal-bea-example",
+      "title": "Bea \u00b7 2026-10-30",
+      "date": "2026-10-30",
+      "person": "Bea",
+      "brief": "Demo workshop in the morning. Review the demo notes before Friday.",
+      "mood": "Good",
+      "edited": "2026-10-30T20:00:00.000Z"
+    }
+  ],
+  "recipes": [
+    {
+      "nid": "recipe-tuna-example",
+      "name": "Tuna rice bowl",
+      "kcal": 540,
+      "p": 42,
+      "c": 60,
+      "f": 12,
+      "ing": {
+        "tuna": 1,
+        "microwave rice": 0.5
+      },
+      "tags": [
+        "lunch"
+      ]
+    }
+  ],
+  "uni": [
+    {
+      "nid": "uni-demo-example",
+      "type": "Assignment",
+      "title": "Demo essay",
+      "person": "Bea",
+      "course": "DEMO101",
+      "due": "2026-11-20",
+      "pct": 40
+    }
+  ],
+  "chores": [
+    {
+      "nid": "chore-bins-example",
+      "name": "Put the demo bins out",
+      "person": "Cam",
+      "day": "Tue",
+      "done": false
+    }
+  ],
+  "bills": [
+    {
+      "nid": "bill-power-example",
+      "name": "Demo power",
+      "amount": 120,
+      "freq": "quarterly",
+      "due": "2026-12-01"
+    }
+  ],
+  "habits": [
+    {
+      "nid": "habit-read-example",
+      "name": "Read one demo page",
+      "person": "Bea",
+      "done": true,
+      "log": "2026-10-28, 2026-10-29"
+    }
+  ],
+  "people": [
+    {
+      "nid": "person-bea-example",
+      "name": "Bea",
+      "kcal": 1900,
+      "p": 85,
+      "c": 200,
+      "f": 55,
+      "budget": 100,
+      "goal": "Finish the demo workshop without skipping meals"
+    }
+  ],
+  "expenses": [
+    {
+      "nid": "exp-1",
+      "desc": "Demo coffee",
+      "amount": 4.5,
+      "cat": "Eating out",
+      "date": "2026-10-29",
+      "person": "Bea"
+    }
+  ]
+}

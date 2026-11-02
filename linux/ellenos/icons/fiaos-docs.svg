@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="FiaDocs">
+  <rect width="64" height="64" rx="14" fill="#141820"/>
+  <rect x="2" y="2" width="60" height="60" rx="13" fill="none" stroke="#39C5BB" stroke-width="2"/>
+  <path d="M20 16h24v32H20z" fill="none" stroke="#39C5BB" stroke-width="3"/><path d="M26 26h12M26 32h12M26 38h8" stroke="#E12885" stroke-width="2"/>
+</svg>

@@ -1,0 +1,18 @@
+#!/bin/bash
+# Import a NotebookLM (notebooklm-py) login made on another computer into a fiaOS profile.
+# Usage: sudo fiaos-notebooklm-import <ada|bea|cam> /path/to/storage_state.json
+#   On the demo machine:  pipx install notebooklm-py && notebooklm -p bea login   (sign in to that demo profile's own Google account)
+#   then copy ~/.notebooklm/profiles/bea/storage_state.json across (do not commit it).
+# These are Google session cookies = full access to that Google account. Unofficial; opt-in only.
+set -euo pipefail
+p="${1:-}"; f="${2:-}"
+case "$p" in ada|bea|cam) ;; *) echo "usage: $0 <ada|bea|cam> storage_state.json" >&2; exit 2;; esac
+[ -f "$f" ] || { echo "file not found: $f" >&2; exit 2; }
+python3 -c 'import json,sys;d=json.load(open(sys.argv[1]));assert "cookies" in d' "$f" || { echo "not a Playwright storage_state.json" >&2; exit 2; }
+H=/var/lib/fiaos/notebooklm/profiles/$p
+install -d -m 0700 -o fiaos -g fiaos /var/lib/fiaos/notebooklm /var/lib/fiaos/notebooklm/profiles "$H"
+install -m 0600 -o fiaos -g fiaos "$f" "$H/storage_state.json"
+if [ -x /opt/fiaos/nlm-venv/bin/notebooklm ]; then
+  sudo -u fiaos env NOTEBOOKLM_HOME=/var/lib/fiaos/notebooklm /opt/fiaos/nlm-venv/bin/notebooklm -p "$p" auth check --test --json || echo "WARN: auth check failed - log in again on the Mac and re-import"
+else echo "notebooklm-py not installed: rerun install with FIAOS_NOTEBOOKLM=1"; fi
+echo "Imported for $p. Remove the copy you transferred: shred -u '$f'"

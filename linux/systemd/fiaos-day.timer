@@ -1,0 +1,10 @@
+[Unit]
+Description=fiaOS Morning brightness
+
+[Timer]
+OnCalendar=*-*-* 06:30:00
+Persistent=false
+Unit=fiaos-brightness@day.service
+
+[Install]
+WantedBy=timers.target

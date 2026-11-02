@@ -1,0 +1,27 @@
+library|App Library|Every FiaOS app in one grid|/apps.html|Utility
+stage|Stage|Today on the house|/?app=stage|Utility
+meals|Meals|Food for the day|/?app=meals|Utility
+woolies|Shop list|The household shop|/?app=woolies|Utility
+workouts|Workouts|Movement for the day|/?app=workouts|Utility
+study|Study|What is on the desk|/?app=study|Education
+money|Money|What came in and went out|/?app=money|Office
+habits|Habits|Chores and the small repeats|/?app=habits|Utility
+week|Week|The weekly review|/?app=week|Office
+planner|Planner|The paper planner, on screen|/?app=planner|Office
+notes|FiaNotes|Notes, backlinks and cards|/?app=notes|Office
+mail|Fia Mail|Inbox on this machine|/?app=mail|Office
+calendar|Calendar|What is on today|/?app=calendar|Office
+media|FiaMedia|Music, video and focus audio|/?app=media|AudioVideo
+search|Search|One search across the house|/?app=search|Utility
+desk|Fia Desk|Launcher, clipboard and windows|/desk.html?app=desk|Utility
+facet|Facet|Start page for the house browser|/facet.html?app=facet|Network
+docs|FiaDocs|Letters, lists and pictures|/?app=docs|Office
+sheets|FiaSheets|Books, formulas and charts|/?app=sheets|Office
+slides|FiaSlides|Decks that can play themselves|/?app=slides|Office
+paint|FiaPaint|Layers, opacity and blend|/?app=paint|Graphics
+draw|FiaDraw|Paths and boolean shapes|/?app=draw|Graphics
+clip|FiaClip|Cut spans and join them|/?app=clip|AudioVideo
+photo|FiaPhoto|Tone, crop and flatten|/?app=photo|Graphics
+layout|FiaLayout|A page or a poster|/?app=layout|Graphics
+assets|Picture library|Pictures shared by every app|/?app=assets|Graphics
+settings|Settings|Display and power|/?app=settings|Settings

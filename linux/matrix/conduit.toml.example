@@ -1,0 +1,11 @@
+# Example only. Copy aside and edit. Do not commit a live config (it would hold a token).
+[global]
+server_name = "fiaos.local"
+database_path = "/var/lib/fiaos/conduit"
+port = 6167
+address = "127.0.0.1"
+allow_registration = true
+registration_token = "change-me"
+allow_federation = false
+trusted_servers = []
+max_request_size = 20_000_000

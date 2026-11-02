@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=fiaOS
+Description=Calm fiaOS boot splash
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/fiaos
+ScriptFile=/usr/share/plymouth/themes/fiaos/fiaos.script

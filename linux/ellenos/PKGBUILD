@@ -1,0 +1,19 @@
+# Maintainer: FiaOS
+# Build from the repository:  cd linux/ellenos && makepkg -si
+pkgname=fiaos-ellenos
+pkgver=1.0.0
+pkgrel=1
+pkgdesc="Desktop launchers for every FiaOS app on EllenOS"
+arch=('any')
+url="http://127.0.0.1:8080/apps.html"
+license=('custom')
+depends=('bash')
+optdepends=(
+  'electron: open each app in its own window'
+  'chromium: kiosk window when Electron is not installed'
+)
+options=('!strip')
+
+package() {
+  bash "$startdir/install-app-library.sh" --prefix /usr --destdir "$pkgdir" --root "$(cd "$startdir/../.." && pwd)"
+}

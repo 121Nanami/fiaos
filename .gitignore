@@ -1,0 +1,10 @@
+data/
+node_modules/
+.env
+.env.*
+*.pem
+*.key
+*.ics
+*.log
+*.sqlite
+*.sqlite3

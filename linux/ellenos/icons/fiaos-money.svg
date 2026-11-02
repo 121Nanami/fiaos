@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Money">
+  <rect width="64" height="64" rx="14" fill="#141820"/>
+  <rect x="2" y="2" width="60" height="60" rx="13" fill="none" stroke="#39C5BB" stroke-width="2"/>
+  <circle cx="32" cy="32" r="14" fill="none" stroke="#F4D35E" stroke-width="3"/><path d="M32 22v20M26 28h8a4 4 0 010 8h-6" fill="none" stroke="#39C5BB" stroke-width="2"/>
+</svg>

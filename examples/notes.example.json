@@ -1,0 +1,22 @@
+{
+  "notes": [
+    {
+      "id": "boardbea1",
+      "who": "Bea",
+      "text": "Out till 6 \u2014 demo workshop",
+      "until": "2026-11-02T18:00:00.000Z",
+      "untilLabel": "till 6pm",
+      "created": "2026-11-02T01:12:00.000Z",
+      "src": "app"
+    },
+    {
+      "id": "boardada2",
+      "who": "Ada",
+      "text": "Grab demo milk on the way home",
+      "until": "2026-11-03T12:00:00.000Z",
+      "untilLabel": "till tomorrow",
+      "created": "2026-11-02T02:00:00.000Z",
+      "src": "demo"
+    }
+  ]
+}

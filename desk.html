@@ -1,0 +1,23 @@
+<!doctype html><html lang="en-AU"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fia Desk</title><link rel="stylesheet" href="styles.css">
+<style>body{display:block;height:auto;min-height:100vh;padding:16px}main{display:block;padding:0}button{margin:4px}</style></head>
+<body>
+<h1 style="color:var(--t)">Fia Desk</h1>
+<p class="mute">Panel for the Centre app. It talks only to this machine.</p>
+<section id="stats" class="card"></section>
+<section id="apps" class="card"></section>
+<section class="card"><h3>Clipboard</h3><div class="row"><input id="t" placeholder="Text to keep"><button type="button" onclick="keep()">Keep</button><button type="button" onclick="live()">Read clipboard</button></div><div id="clips"></div></section>
+<section class="card"><h3>Windows</h3><button type="button" onclick="tile('left')">Left</button><button type="button" onclick="tile('right')">Right</button><button type="button" onclick="tile('focus')">Fullscreen</button><p id="tile" class="mute"></p></section>
+<script>
+const api=async(u,b)=>{const r=await fetch(u,b?{method:'POST',headers:{'Content-Type':'application/json','X-FiaOS':'1'},body:JSON.stringify(b)}:{});const j=await r.json();if(!r.ok)throw new Error(j.error||r.status);return j};
+const esc=s=>String(s??'').replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+async function boot(){const d=await api('/api/launcher');
+ const m=d.stats.mem||{};
+ document.getElementById('stats').innerHTML=`<h3>${esc(d.stats.hostname)}</h3><p>Load ${(d.stats.load||[]).join(' · ')} · ${d.stats.cpus} cpus<br>Memory free ${m.MemAvailable?Math.round(m.MemAvailable/1024/1024)+' MB':'n/a'}</p>`;
+ document.getElementById('apps').innerHTML='<h3>Apps</h3>'+d.apps.slice(0,16).map(a=>`<p><b>${esc(a.name)}</b> <small>${esc(a.exec)}</small></p>`).join('');
+ document.getElementById('clips').innerHTML=d.clipboard.slice(0,8).map(c=>`<p>${esc(c.text).slice(0,160)}</p>`).join('')||'<p class="mute">Empty.</p>'}
+async function keep(){await api('/api/launcher/clipboard',{text:document.getElementById('t').value});boot()}
+async function live(){await api('/api/launcher/clipboard?live=1');boot()}
+async function tile(p){const j=await api('/api/launcher/tile',{preset:p});document.getElementById('tile').textContent=j.ran?('Ran '+j.ran):j.note}
+boot().catch(e=>{document.body.insertAdjacentHTML('beforeend','<p class="warn">'+esc(e.message)+'</p>')});
+</script></body></html>
